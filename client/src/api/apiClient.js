@@ -1,7 +1,10 @@
 // src/api/apiClient.js
 import axios from 'axios';
 
-const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+
+
+const API_BASE = process.env.REACT_APP_API_URL || 'https://primetradeaiserver.onrender.com/api';
+
 
 const apiClient = axios.create({
   baseURL: API_BASE,
